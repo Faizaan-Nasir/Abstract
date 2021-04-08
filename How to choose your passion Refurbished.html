@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel = "icon" href =
+  "ABSTRACT favicon.png"
+  type = "image/x-icon">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>How to Choose your Passion</title>
+<style>
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-family: Corbel;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #8E94F2;
+  width: 0%;
+}
+/* The sidepanel menu */
+.sidepanel {
+  font-family: Corbel Light;
+  height: 10000px;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 145; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #707070; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #8E94F2;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #707070;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-family: Corbel Light;
+}
+
+.openbtn:hover {
+  background-color: #333333;
+}
+
+.text {
+	font-family: "Calibri Light";
+  font-size: 18px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+
+
+
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.auto-style1 {
+	border-style: solid;
+	border-width: 2px;
+	font-family: "Corbel Light";
+	font-size: larger;
+}
+.auto-style2 {
+	padding: 1px 4px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+	font-family: Corbel;
+}
+.auto-style5 {
+	font-size: larger;
+	font-family: "Corbel Light";
+}
+</style>
+</head>
+<body background="nsas640664_algv640664_5be4103793b36.jpg">
+<script src=”jquery.min.js”></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+             e.keyCode === 86 ||
+             e.keyCode === 85 ||
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="The New Articles.html">Back to Articles</a>
+  <a href="New cover page.html" target="_blank">Cover Page</a>
+  <a href="Main Menu.html" target="_blank">Menu Page</a>
+  <a href="http://website.dpssharjah.com/" target="_blank">DPS Website</a>
+</div>
+<div class="auto-style2" style="left: -4px; top: 0; width: 101%">
+  <h2 align="center" >How to Choose your Passion?</h2>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p class="auto-style5">It’s just impossible to talk about what you want to be before you are in 9th. Because let’s be honest, we all are immature and we arbitrarily change our minds about what we want to be. Like for example I have changed my mind 6 times before ninth.
+
+</span></p>
+
+	<p>
+
+<img alt="See the source image" class="auto-style1" height="221" src="careers--different-career-paths--being-on-the-fast-track.jpg" width="400" style="float: left" /><span class="auto-style5">&nbsp; -&gt; First I wanted be a pilot,
+	</span>
+</p>
+	<p class="auto-style5">&nbsp; -&gt; Then I changed my mind in kindergarten 2, and wanted to be like my father, a Civil Engineer.
+</p>
+	<p class="auto-style5">&nbsp; -&gt; Then I decided I wanted to be a software engineer like my brother since he got soo many privileges.
+</p>
+	<p class="auto-style5">&nbsp; -&gt; Then I also considered becoming a politician. Change the world and make it a better place. You know the drill.
+</p>
+	<p class="auto-style5">&nbsp; -&gt; Then I decided I will be better off being an aeronautical engineer. That would fullfill my dream of becoming a pilot as well as an engineer, or that’s what I thought.
+</p>
+	<p class="auto-style5">&nbsp; -&gt; Then I found that becoming a pilot is still the best option.</p>
+	<p class="auto-style5">&nbsp;After reading that, you may now doubt my ability to give you tips on this topic. But since I have the authority to do so, I’ll do it anyway.
+First of all no one wants you to be the perfect human in life so you can be inconsistent like I am. Change your mind if you see a better option. No one’s gonna judge you. And even if Sharma ji judges you, why should it matter to you? It's your life, not his.
+That being said you can’t be extremely inconsistent either. In my personal opinion, by the time you reach grade 10, you need to be sure of what field you select.
+Next thing is don’t select a field that you know might not suit you in the long run, like say a YouTuber, every teenagers dream job.
+</p>
+	<p class="auto-style5">See the problem is the YouTube field is also very unpredictable, it changes every now and then.
+Similar to my previous point, don’t lock onto one particular field and never move on. Let me be clear here, many-a-times we don’t consider the economical situation and the manpower really needed for the field we have chosen. So if you know you wont get a job in the field you have chosen, then chose some other one.
+Well that’s my tips on how to select your job and consider READING it for once. Maybe by the end of your read you’ll be able to relate with me and hopefully will find what you want to be.
+</p>
+ </div>
+  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel = "icon" href ="ABSTRACT favicon.png" type = "image/x-icon">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Shopping</title>
+<style>
+
+
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-family: Corbel;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #8E94F2;
+  width: 0%;
+}
+/* The sidepanel menu */
+.sidepanel {
+  font-family: Corbel Light;
+  height: 10000px;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 145; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #707070; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #8E94F2;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #707070;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-family: Corbel Light;
+}
+
+.openbtn:hover {
+  background-color: #333333;
+}
+
+.text {
+	font-family: "Calibri Light";
+  font-size: 18px;
+}
+.auto-style9 {
+	font-family: Verdana;
+}
+
+.auto-style8 {
+	text-align: left;
+	margin-left: 0px;
+}
+.auto-style2 {
+	font-family: Verdana;
+}
+.auto-style2 {
+	text-align: left;
+	font-family: Verdana;
+}
+.auto-style6 {
+	text-align: justify;
+	text-indent: -18.0pt;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: Verdana;
+	margin-left: 1pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 8.0pt;
+}
+.auto-style10 {
+	font-weight: normal;
+}
+.auto-style11 {
+	font-size: larger;
+}
+.auto-style5 {
+	border-style: solid;
+	border-width: 2px;
+	font-family: "Corbel Light";
+	margin-left: 0px;
+	margin-right: 25px;
+	margin-top: 16px;
+}
+.auto-style12 {
+	text-align: left;
+	text-indent: -18.0pt;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: Calibri, sans-serif;
+	margin-left: 295pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm;
+}
+.auto-style7 {
+	border-style: solid;
+	border-width: 2px;
+	font-family: "Corbel Light";
+	font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+
+
+
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.auto-style13 {
+	font-family: "Corbel Light";
+}
+.auto-style14 {
+	text-align: left;
+	text-indent: -18.0pt;
+	line-height: 107%;
+	font-size: large;
+	font-family: "Corbel Light";
+	margin-left: 295pt;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm;
+}
+.auto-style15 {
+	font-family: "Corbel Light";
+	font-size: large;
+}
+.auto-style16 {
+	font-size: large;
+}
+
+</style>
+</head>
+
+<body background="nsas640664_algv640664_5be4103793b36.jpg">
+<script src=”jquery.min.js”></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+             e.keyCode === 86 ||
+             e.keyCode === 85 ||
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="The New Articles.html">Back to Articles</a>
+  <a href="New cover page.html" target="_blank">Cover Page</a>
+  <a href="Main Menu.html" target="_blank">Menu Page</a>
+  <a href="http://website.dpssharjah.com/" target="_blank">DPS Website</a>
+</div>
+<div class="header" style="left: -4px; top: 0; width: 101%">
+  <h2 align="center" class="auto-style10">
+<span lang="EN-US" style="line-height: 107%" class="auto-style11">
+  <strong>&nbsp;"<span lang="EN-US" style="line-height: 107%; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin">The
+  other line moves faster"</span></strong></span></h2>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p class="auto-style2">
+<span lang="EN-US" style="line-height: 107%" class="auto-style15">This is exactly what goes through my head when I am in a shopping line. I am
+someone who understands shopping but does not at the same time.</span><span lang="EN-US" style="font-size: 12.0pt; line-height: 107%; font-family: &quot;Segoe UI Emoji&quot;,sans-serif; mso-bidi-font-family: &quot;Segoe UI Emoji&quot;"><o:p></o:p></span></p>
+<p><span lang="EN-US" style="line-height: 107%" class="auto-style16">
+<span class="auto-style13">Shopping is an activity in which a customer browses
+the available goods or services presented by one or more retailers with the
+potential intent to purchase a suitable selection of them. Wait, wha-? So
+basically, shopping is buying something from shops. We mostly buy groceries and
+other necessary items. Stress on the word mostl</span><span class="auto-style9"><img alt="See the source image" class="auto-style5" src="https://media.istockphoto.com/photos/closeup-the-colorful-shopping-bags-were-holding-by-lady-handin-front-picture-id958774962?k=6&amp;m=958774962&amp;s=612x612&amp;w=0&amp;h=FRnalJ1ti2v7d0DhGV_Vuwr2d4P22bOliozlEEOUpNs=" height="288" style="float: left" width="386" /></span></span></p>
+<p class="MsoNormal">
+<span lang="EN-US" style="line-height: 107%" class="auto-style16">
+<o:p></o:p>
+<span class="auto-style13">I would like to share a quote that I think all of us
+can relate to. The odds of going to the store for a loaf of bread and coming out
+with only a loaf of bread are three billion to one. We buy a lot of things that
+we really don’t need. Here are reasons why:</span><o:p><br class="auto-style13" />
+</o:p>
+</span></p>
+<p class="auto-style12" style="mso-list: l0 level1 lfo1">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">&nbsp; 1.
+Class that follows
+the current trends and is up to date with everything. Even if this means
+following a stupid trend that involves dumping a bucket of cold water on your
+head or buying a watermelon and 2000 rubber-bands just to see if entwining them
+around the watermelon will make it explode.<br />
+</span>
+<span class="auto-style9" lang="EN-US" style="font-size: 12.0pt; line-height: 107%">&nbsp;<o:p></o:p></span></p>
+<p class="auto-style12" style="mso-list: l0 level1 lfo1">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">&nbsp; 2. Then, there are some people who are just simply addicted to shopping. Shopping
+runs through their veins.<br />
+</span></p>
+	<p class="auto-style14" style="mso-list: l0 level1 lfo1">
+	&nbsp;</p>
+<p class="auto-style12" style="mso-list: l0 level1 lfo1">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">&nbsp; 3. Some people shop without knowing what they want. Just simply trudge into the
+mall, breathe in the AC, hear kids crying over desires, watch people stuff their
+faces at the food court, and get into the line for the one dirham McDonald’s ice
+cream just to find that the machine doesn’t freaking work.<span style="mso-spacerun: yes">&nbsp;
+</span><o:p><br />
+</o:p>
+</span></p>
+	<p class="auto-style12" style="mso-list: l0 level1 lfo1">
+	<o:p>
+</o:p>
+	</p>
+<p class="auto-style12" style="mso-list: l0 level1 lfo1">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">&nbsp; 4. Sometimes, you just shop because your house doesn’t have air conditioning, but
+the mall does.<br />
+</span></p>
+	<p class="auto-style14" style="mso-list: l0 level1 lfo1">
+	&nbsp;</p>
+<p class="auto-style6" style="mso-list: l0 level1 lfo1">
+<span class="auto-style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="EN-US" style="line-height: 107%" class="auto-style16"><span class="auto-style13">All these
+spendings are amplified by shopping festivals, such as DSF. DSF stands for Dubai
+Shopping Festival. During this, the prices of everything are reduced. That’s
+great, you might say, and I totally agree but the catch is that we aren’t
+seeking a particular thing. We are just buying stuff for the sake of buying
+stuff. Doing <i>that</i> leaves you with a house full of totally useless stuff
+(like lightsabers, Pikachu stuffed figures) and a long credit card bill.
+</span>
+<br class="auto-style13" />
+<br class="auto-style13" />
+<span class="auto-style13">When you think expensive, think duty-free. Basically,
+there’s no tax. We see most of duty-free at airports. I was casually looking at
+the shops (because my parents made us come to the airport 6 hours before our
+flight took off, just to be on the safe side) and my eyes go to the chocolate
+shop (my soul is still that of a 5 year old) I look at the price of a normal
+Toblerone. I rub my eyes and look at the price again. It's 40 AED for 6
+Toblerones! If I go to buy the same deal somewhere else, I will get it for 20
+dirhams. They also sell watches priced at 90,000 dirhams, but that’s a different
+matter.</span><img alt="50% discount sign" class="auto-style7" height="281" src="https://images.unsplash.com/photo-1561069934-eee225952461?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" width="408" style="float: right" /></span></p>
+<p class="MsoNormal">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">
+Global Village. With the excuse of wanting to know more about other countries’
+cultures, we just straight up go on a shopping spree. Oh, that keychain
+signifies the struggle and culture of the Africans, let’s buy it as a reminder
+that I wasted money once again! Let’s buy a magnet of this small town in
+Yugoslavia. Let’s buy this sound making drum thingy for my uncle’s nephew’s
+brother. Global Village does have a great concept, but many people end up buying
+more materialistic things rather than gaining knowledge. <o:p></o:p></span></p>
+<p class="MsoNormal">
+<span lang="EN-US" style="line-height: 107%" class="auto-style16">
+<span class="auto-style13">Sometimes we get so immersed in shopping that some
+parents forget their kids in shops or the kid themselves get lost. I have had a
+similar experience when I was smaller. You know how attractive toys are. I was
+so absorbed in the toys that I completely lost track of where my parents were.
+And I got lost. As a 6-year-old, you know what my emotional reaction would have
+been. I cried and cried. After a minute of wandering with no purpose, there they
+were. Right behind the aisles, looking at fancy bread. (why was the bread aisle
+next to the toy aisle? I want to talk to your manager)</span><o:p></o:p></span></p>
+<p class="MsoNormal">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">
+If we go to buy 2 things, we bring back another 20 things. A reason for this is
+advertising. Every ad gives the same message: your life will be better if you
+buy this product. We hear this so many times that we sort of start believing it. <o:p></o:p>
+</span></p>
+<p class="MsoNormal">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">
+There are 4 ways they make us buy products:<o:p></o:p></span></p>
+<p class="auto-style8" style="width: 1121px">
+<span lang="EN-US" style="line-height: 107%" class="auto-style16">
+<span class="auto-style13">One way that they make us buy products are nice logos
+like the one Amazon has. Come on, can you resist a box smiling at you? </span>
+<br class="auto-style13" />
+<span class="auto-style13">The second way is that the products target
+insecurities like weight loss, hair restoration, diets, etc. </span>
+<br class="auto-style13" />
+<span class="auto-style13">The third method is using attractive colors. Products
+that are on sale have names emblazoned with red letters and signs. </span>
+<br class="auto-style13" />
+<span class="auto-style13">The fourth and last method is by planning. That’s why
+the floorplan of stores looks like a maze. They are designed for you to look at
+every product. An excellent example of this is Ikea. I’ve gone to Ikea to buy a
+dustbin. We came out with a dustbin, a pot, some flowers, and chairs.</span></span><span lang="EN-US" style="font-size: 12.0pt; line-height: 107%">
+<o:p></o:p>
+</span></p>
+<p class="MsoNormal">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">
+We go out to refresh ourselves. But we come back with an exhausted body and
+exhausted wallet. I get so exhausted from shopping that I don’t even freshen up.
+Crash onto the bed in those jeans and toes hurting from the Skechers that said
+memory foam does wonders. <o:p></o:p></span></p>
+<p class="MsoNormal">
+<span class="auto-style15" lang="EN-US" style="line-height: 107%">
+I need to go, my mom’s asking me where the money went</span><span class="auto-style15" lang="EN-US" style="line-height: 107%; mso-bidi-font-family: &quot;Segoe UI Emoji&quot;">.</span><span lang="EN-US" style="font-size: 12.0pt; line-height: 107%"><o:p></o:p></span></p>
+
+ </div>
+  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel = "icon" href =
+"ABSTRACT favicon.png"
+type = "image/x-icon">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>How to cope with Exams</title>
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-family: Corbel;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #8E94F2;
+  width: 0%;
+}
+/* The sidepanel menu */
+.sidepanel {
+  font-family: Corbel Light;
+  height: 10000px;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 145; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #707070; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #8E94F2;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #707070;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-family: Corbel Light;
+}
+
+.openbtn:hover {
+  background-color: #333333;
+}
+
+.text {
+	font-family: "Calibri Light";
+  font-size: 18px;
+}
+.auto-style10 {
+	font-weight: normal;
+}
+.auto-style11 {
+	font-size: larger;
+}
+.auto-style1 {
+	font-family: "Corbel Light";
+	font-weight: bold;
+}
+.auto-style9 {
+	border-style: solid;
+	border-width: 2px;
+margin-left: 0px;
+	font-size: larger;
+	margin-right: 17px;
+}
+.auto-style12 {
+	margin-left: 0px;
+}
+.auto-style13 {
+	font-size: larger;
+	border-style: solid;
+	border-width: 0px;
+	margin-left: 0px;
+}
+.auto-style15 {
+	font-family: "Corbel Light";
+	font-size: larger;
+}
+.auto-style16 {
+	font-size: larger;
+	font-weight: bold;
+}
+.auto-style17 {
+	font-family: "Corbel Light";
+}
+</style>
+</head>
+<body background="nsas640664_algv640664_5be4103793b36.jpg">
+<script src=”jquery.min.js”></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+             e.keyCode === 86 ||
+             e.keyCode === 85 ||
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="The New Articles.html">Back to Articles</a>
+  <a href="New cover page.html" target="_blank">Cover Page</a>
+  <a href="Main Menu.html" target="_blank">Menu Page</a>
+  <a href="http://website.dpssharjah.com/" target="_blank">DPS Website</a>
+</div>
+<div class="header" style="left: -4px; top: 0; width: 101%">
+  <h2 align="center" class="auto-style10">
+<span lang="EN-US" style="line-height: 107%" class="auto-style11">
+  <strong>&nbsp;"You know more than you think you do.<span lang="EN-US" style="line-height: 107%; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin">"</span></strong></span></h2>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p class="auto-style15">I know, I know. Exams are stressful and you would rather
+quit school than reading one of such millions of articles on the internet. This
+on, however is from a student's perspective and are hopefully feasable.
+</p>
+	<p>&nbsp;<span class="auto-style17"><span lang="EN-US" style="mso-ansi-language: EN-US" class="auto-style16">&nbsp; Take a break when you feel like it</span></span><span lang="EN-US" style="mso-ansi-language: EN-US"><span class="auto-style15">.
+	I would have taken a break for the whole year, but that’s not possible and
+	that’s not what I mean. If you aren’t able to concentrate, take a small
+	break. You probably will ignore this bit of the paragraph but I would
+	recommend to not watch or play anything digitally. This is because of the
+	two following reasons, one being that you will be spoiling your eyes
+	especially considering that nowadays we all study digitally. The other
+	reason is that once you start watching or playing something, it will become
+	hard for yu to be able to start studying again. Even if you do manage to
+	persuade yourself to start studying, you will be distracted. You could
+	instead go out cycling, exercise or just sleep.</span></span></p>
+	<p class="auto-style12"><span class="auto-style1">
+<span lang="EN-US" style="mso-ansi-language: EN-US">
+<img alt="See the source image" class="auto-style9" height="267" src="pomodoro.png" width="480" style="float: left" /><span class="auto-style11">&nbsp; Try different ways of
+studying.</span></span></span><span lang="EN-US" style="mso-ansi-language: EN-US"><span class="auto-style15">
+There’s a method known as the Pomodoro technique (a series of doing work for
+some time, say 1 hour, and then take a break for some time, say 20 mins, again
+work for 1 hour, then take a longer break). You can change the duration of
+studying and breaks according to your taste. It’s quite effective for many out
+there. But that's just one technique. You could look up on the internet for
+	other methods of studying. Point is, you need to find a technique that
+	suites you best.</span></span></p>
+	<p class="auto-style12"><span class="auto-style17">
+	<span lang="EN-US" style="mso-ansi-language: EN-US" class="auto-style16">&nbsp; Don’t overstress yourself.</span></span><span lang="EN-US" style="mso-ansi-language: EN-US"><span class="auto-style17"><span class="auto-style11">
+Take some stress but don’t go off your rockers. Stress helps you keep going
+(that’s what I think, I’m definitely not a certified psychologist). Just a side
+	note here, never, I repeat, never ever do group studies. Your </span>
+<img alt="See the source image" class="auto-style13" height="240" src="9636_panik.png" width="243" style="float: right" /><span class="auto-style11">friend might
+	have studied something that you, and probably the entire class, didn't
+	because it was not in the syllabus, thus if you do group studies you'll be
+	stressing yourself enough to ruin yor upcoming exam.</span></span></span></p>
+	<p>&nbsp;<span class="auto-style17"><span lang="EN-US" style="mso-ansi-language: EN-US" class="auto-style16">&nbsp; Don’t compare yourself to
+others.</span></span><span lang="EN-US" style="mso-ansi-language: EN-US"><span class="auto-style15">
+This is the one I ask everyone to do. Many of my friends “notify” me of their
+progress (“Hi Tanmeen I’m going to study this week for math and next week for
+science. What about you?” even if the exam is a month away). I personally do get
+affected by this and I try my best to stay away from group chats and group
+studies. What happens is that I see how much ‘extra’ my peers have done and I
+feel unprepared.</span></span><span class="auto-style15">&nbsp;</span></p>
+	<p><span class="auto-style15">&nbsp; </span> <span class="auto-style17">
+<span lang="EN-US" style="mso-ansi-language: EN-US" class="auto-style16">Stay kalm. </span>
+</span><span lang="EN-US" style="mso-ansi-language: EN-US">
+<span class="auto-style15">Even if you don’t get what you expected, there’s
+always 150 other exams ahead of you.</span></span>&nbsp;</p>
+	<p>&nbsp;</p>
+ </div>
+  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+</body>
+
+</html>

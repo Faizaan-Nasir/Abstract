@@ -1,0 +1,359 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Articles</title>
+<link rel = "icon" href =
+"ABSTRACT favicon.png"
+type = "image/x-icon">
+<style>
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: #1C1F21;
+  color: #C8CDD0;
+}
+
+.light-mode
+ {
+  background-color: white;
+  color: #777;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #47FF8B;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.bgimg-1 {
+  background-image: url('damian-zaleski-RYyr-k3Ysqg-unsplash.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url('Dog reading.jpg');
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #3b3b3b;
+  font-size:xx-large;
+}
+
+.caption span.border {
+  background-color: inherit;
+  color: black;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-style:oblique;
+  font-size:xx-large;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #3b3b3b;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color:inherit;
+}
+
+a:active {
+  color:#80CFA9;
+}
+
+a:hover {
+  color:#80CFA9;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+.container {
+  position: relative;
+  width: 50%;
+  margin-top: 10px;
+  margin-right:40px;
+}
+
+.containernew {
+  position: relative;
+  width: 50%;
+  margin-top: 10px;
+  margin-left:350px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+
+.containernew1 {
+  position: relative;
+  width: 50%;
+}
+
+.containernew2 {
+  position: relative;
+  width: 50%;
+}
+
+.bgimg {
+	z-index: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #adb5bd;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.containernew:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.column:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.986.0" data-gr-ext-installed="">
+  <script src=”jquery.min.js”></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+             e.keyCode === 86 ||
+             e.keyCode === 85 ||
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+ }
+
+</script>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"><strong><font style="font-size:xx-large">ARTICLES</font></strong></span>
+  </div>
+</div>
+
+<p style="color: #777;background-color:white;text-align:center;text-align: center;">
+  <h2 style="text-align:center; letter-spacing: 5px"><b>WHY?</b></h2>
+  <p align="center">Articles are a way of propogating news, results of a research, debate or academic analysis.</p>
+  <p align="center">Some are angry, and use the word as a weapon against things that make them mad. Some are informed about something that has a message, and use words for empowerment of self or others. Some use it as a form of therapy and write journal-type articles which lay bare their symptoms. Some write them because it's a way to occasionally make some money with your skill or knowledge, or because it's a way to pay for your travel habit. Some people simply write them to express their love, appreciation, or criticism of the things they care about, like food, movements, literature, or whatever.</p>
+  <p align="center">People write to express their thoughts and so, we have curated a collection of select articles from our friends.</p>
+<label class="switch" title="Dark Mode">
+  <input type="checkbox">
+  <span class="slider round" onclick="myFunction()"></span>
+</label>
+</p>
+<p align="center">
+<div class="bgimg-2"></div>
+  <p style="color: #777;">
+<div class="bgimg" style="background-image: url('pexels-eberhard-grossgasteiger-2310713.jpg')">
+<br>
+<div class="containernew">
+  <img src="shopping image.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"> <a href="Shopping Article with New ProtoType.html"><h3 style="text-align:center;">Shopping</h3></a>
+    Go on an exhilarating fun adventure with Tanmeen Patel as you read this article about his feelings on Shopping.
+   Written by Tanmeen Patel, 943 words. 4 mins read time.</div>
+  </div>
+</div>
+<div class="containernew">
+  <img src="time and tide image.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"> <a href="Time and Tide Refurbished.html"><h3 style="text-align:center;">Time and Tide</h3></a>
+    Time and Tide wait for none. It's quite a thought-provoking quote. This article is a mixture of fun and seriousness,
+    at the same time. Written by Tanmeen Patel, 910 words. 4 mins read time.</div>
+</div>
+  </div>
+<div class="containernew">
+  <img src="exam image.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"> <a href="Cope with Exams.html"><h3 style="text-align:center;">Cope with Exams</h3></a>
+    We can recount countless times when we just bang our head on the table the day before an exam. Here's an article
+    to reduce a bit of your stress. Written by Tanmeen Patel, 316 words. 2 mins read time</div>
+   </div>
+</div>
+<div class="containernew">
+  <img src="follow ur passion.jpg"alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"> <a href="How to choose your passion Refurbished.html"><h3 style="text-align:center;">Choose your Passion</h3></a>
+    In 10th grade and still have no idea what you're doing? In 6th grade, wanting to have a small idea about what you will become? Read this mini
+self-guide to put you on the right track. Written by Faizaan Nasir, 412 words. 2 mins read time</div>
+   </div>
+</div>
+<br>
+</div>
+<br>
+</p>
+</body>
+</html>

@@ -1,0 +1,451 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creative Corner</title>
+<!-- add icon link -->
+<link rel = "icon" href =
+"ABSTRACT favicon.png"
+type = "image/x-icon">
+<style>
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: #1C1F21;
+  color: #C8CDD0;
+}
+
+.light-mode
+ {
+  background-color: white;
+  color: #777;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url('kelly-sikkema-Rq1MLxP5RgI-unsplash.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url('art supply.jpg');
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #3b3b3b;
+  font-size:xx-large;
+}
+
+.caption span.border {
+  background-color: inherit;
+  color: black;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-style:oblique;
+  font-size:xx-large;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color:inherit;
+}
+
+a:active {
+  color:#80CFA9;
+}
+
+a:hover {
+  color:#80CFA9;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #47FF8B;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+</style>
+</head>
+<body>
+<script src=”jquery.min.js”></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+             e.keyCode === 86 ||
+             e.keyCode === 85 ||
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+ }
+</script>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"><strong><font style="font-size:xx-large" color="#3b3b3b">CREATIVE CORNER</font></strong></span>
+  </div>
+</div>
+
+<p class="light-mode" style="text-align:center;text-align: justify;">
+  <h3 style="text-align:center;"><b>Why?</b></h3>
+  <p align="center">Art brings beauty into our world. It also brings a sense of enjoyment and pleasure.</p>
+  <p align="center">Art allows for the expression of truth and beliefs. Some art challenges our beliefs. Other works affirm our faith. Art is an important tool in causing us to examine our beliefs in light of an artists' rendition or perception of truth.</p>
+  <p align="center">Art has the intrinsic ability to elevate the commonplace. It lifts the viewer beyond the confines of reality and into another world, such as the use of art to express fantasy. Sometimes art provides pure escapism, such as cartoons and comics. Other art allows us to juxtapose fantasy and reality, creating a world in which the artist wished we lived. </p>
+  <label class="switch" title="Dark Mode">
+  <input type="checkbox">
+  <span class="slider round" onclick="myFunction()"></span>
+</label>
+</p>
+<div class="bgimg-2"></div>
+<br>
+<p><font style="font-size: large"><b>LET'S GET TO THE ART</b></font>
+<br>Click on the buttons to filter accordingly.
+</p>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Among Us')"> Among Us</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('space')"> Space</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Among Us">
+    <div class="content">
+      <img src="Among Us 1.jpeg" alt="Among Us #1" style="width:100%">
+      <font color="#3b3b3b"><h4>Among Us #1</h4>
+      <p>Among Us #1: From the popular game Among Us, this scarily resembling artwork was made by Aamir Ashik, from 9th Grade</p></font>
+    </div>
+  </div>
+  <div class="column Among Us">
+    <div class="content">
+      <img src="Among Us 2.jpeg" alt="Among Us #2" style="width:100%">
+      <font color="#3b3b3b"><h4>Among Us #2</h4>
+      <p>Among Us #2: From the popular game Among Us, this scarily resembling artwork was made by Aamir Ashik, from 9th Grade</p></font>
+    </div>
+  </div>
+  <div class="column Among Us">
+    <div class="content">
+      <img src="Among Us 3.jpeg" alt="Among Us #3" style="width:100%">
+      <font color="#3b3b3b"><h4>Among Us #3</h4>
+      <p>Among Us #3: From the popular game Among Us, this scarily resembling artwork was made by Aamir Ashik, from 9th Grade</p></font>
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <img src="Nature.jpg" alt="Fantastical Nature" style="width:100%">
+      <font color="#3b3b3b"><h4>Fantastical Nature</h4>
+      <p>This colorful piece straight out of a fantasy was made by Tanmeen Patel, from 9th Grade</p></font>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="Haunted House.jpg" alt="Spooky!" style="width:100%">
+      <font color="#3b3b3b"><h4>Spooky!</h4>
+      <p>Made out of shades of black and just one other color, this spooky artwork was made by Tanmeen Patel, from 9th Grade</p></font>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="Buildings Nature.jpg" alt="Just a Normal Scenery" style="width:100%">
+      <font color="#3b3b3b"><h4>Just a Normal Scenery</h4>
+      <p>An artwork cleverly made with lines and vibrant colors, drawn by Pransee Patel, of Grade 12</p></font>
+    </div>
+  </div>
+
+  <div class="column space">
+    <div class="content">
+      <img src="Horizon in a Jar.jpg" alt="Horizon in a Jar" style="width:100%">
+      <font color="#3b3b3b"><h4>Horizon in a Jar</h4>
+      <p>Just as its title suggests, its the horizon in a jar. Made by Tanmeen Patel, from 9th Grade</p></font>
+    </div>
+  </div>
+  <div class="column space">
+    <div class="content">
+      <img src="Gifting Plants.jpg" alt="Gifing a few planets" style="width:100%">
+      <font color="#3b3b3b"><h4>Gifting a few planets...</h4>
+      <p>A cute scenario with a few unknown planets, made by Tanmeen Patel, from 9th Grade</p></font>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="Indian Woman.jpg" alt="Indian Woman" style="width:100%">
+      <font color="#3b3b3b"><h4>Indian Woman</h4>
+      <p>A local woman wearing the sari and decorated with physical materials like beads, this was painted by Pransee Patel, from 12th Grade</p></font>
+    </div>
+  </div>
+    <div class="column people">
+    <div class="content">
+      <img src="African Woman.jpg" alt="Red Indian" style="width:100%">
+      <font color="#3b3b3b"><h4>A Red Indian</h4>
+      <p>A unique piece using cloth as hair for a tribal and beads to make up her necklace,made by Pransee Patel, from 12th Grade</p></font>
+    </div>
+  </div>
+    <div class="column people">
+    <div class="content">
+      <img src="Japanese Woman.jpg" alt="Japanese Woman" style="width:100%">
+      <font color="#3b3b3b"><h4>Japanese Woman</h4>
+      <p>The culture and architecture of Japan with a local from Japan. Once again, made by Pransee Patel, of 12th Grade</p></font>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+</body>
+</html>

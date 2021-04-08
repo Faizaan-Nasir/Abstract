@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel = "icon" href =
+"ABSTRACT favicon.png"
+type = "image/x-icon">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Abstract.</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #EF626C;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: #559CAD;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand 1s ease forwards;
+  background-image:url('a bit smaller but without the white.png');
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 80%;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+  margin-right: 100px
+}
+
+.container_img {
+  width: 100%;
+  animation: slideIn 2s ease-in-out forwards;
+  margin-right: 1000px;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 28px;
+  transform: translateY(300px);
+  animation: slideUp 1s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #EF626C;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.auto-style1 {
+	border-style: solid;
+	border-width: 3px;
+	border-color:white;
+	animation: slideIn 1.5s ease-in-out forwards;
+  margin-right: 250px;
+}
+.auto-style2 {
+	margin: 50px 50px 50px 125px;
+	width: 50%;
+	overflow: hidden;
+}
+.dropbtn {
+  background-color: #559CAD;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #BFBFBF;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #427B8A;}
+
+</style>
+</head>
+
+<body style="background-image: url('https://th.bing.com/th/id/OIP.rdS0JnJ0SmoU6y6w20tfaAHaE8?pid=Api&amp;rs=1')">
+  <script src=”jquery.min.js”></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  $(document).ready(function () {
+      $("body").on("contextmenu",function(e){
+          return false;
+      });
+
+      $("#id").on("contextmenu",function(e){
+          return false;
+      });
+  });
+
+  document.onkeydown = function(e) {
+          if (e.ctrlKey &&
+              (e.keyCode === 67 ||
+               e.keyCode === 86 ||
+               e.keyCode === 85 ||
+               e.keyCode === 117)) {
+              return false;
+          } else {
+              return true;
+          }
+  };
+</script>
+<div class= 'container'>
+<div class="container_content">
+<div class="container_content_inner">
+<div class="title">
+  <h1><font color="559CAD">Welcome!</font></h1>
+</div>
+<div class="par">
+<p><font color="black">
+Welcome to Abstract, a magazine for dipsites by dipsites. You'll be greeted by a ton of things like articles and artwork. Click on the See More button to continue.</font>
+</p><br>
+</div>
+<div class="dropdown">
+  <button class="dropbtn" style="width: 180px">See More</button>
+  <div class="dropdown-content">
+    <a href="Main Menu.html" target="_blank">Next → Menu Page</a>
+    <a href="http://website.dpssharjah.com/" target="_blank">DPS Home Page</a>
+    <a href="https://www.youtube.com/channel/UCeMgXeJTq89DxrALMf_5-mg/featured" target="_blank">Events</a>
+    <a href="About Us.html" target="_blank">About Us</a>
+  </div>
+</div>
+</div>
+</div>
+ <div class="auto-style2">
+ <div class="img-inner">
+ <img src="Abstract Cover with Student.png"  alt="Magazine cover for Abstract." class="auto-style1" height="650" width="486"/>
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+</body>
+
+</html>

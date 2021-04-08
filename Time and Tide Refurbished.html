@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel = "icon" href =
+  "ABSTRACT favicon.png"
+  type = "image/x-icon">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Time and Tide Wait for None</title>
+<style>
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-family: Corbel;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #8E94F2;
+  width: 0%;
+}
+/* The sidepanel menu */
+.sidepanel {
+  font-family: Corbel Light;
+  height: 10000px;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 145; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #707070; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #8E94F2;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #707070;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-family: Corbel Light;
+}
+
+.openbtn:hover {
+  background-color: #333333;
+}
+
+.text {
+	font-family: "Calibri Light";
+  font-size: 18px;
+}
+.auto-style4 {
+	border-style: solid;
+	border-width: 2px;
+margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 6px;
+	font-size: larger;
+	font-family: "Corbel Light";
+}
+.auto-style5 {
+	border-style: solid;
+	border-width: 2px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	font-size: larger;
+	font-family: "Corbel Light";
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+
+
+
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.auto-style6 {
+	font-family: "Corbel Light";
+	font-size: larger;
+}
+</style>
+</head>
+
+<body background="nsas640664_algv640664_5be4103793b36.jpg">
+  <script src=”jquery.min.js”></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+             e.keyCode === 86 ||
+             e.keyCode === 85 ||
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="The New Articles.html">Back to Articles</a>
+  <a href="New cover page.html" target="_blank">Cover Page</a>
+  <a href="Main Menu.html" target="_blank">Menu Page</a>
+  <a href="http://website.dpssharjah.com/" target="_blank">DPS Website</a>
+</div>
+<div class="header" style="left: -4px; top: 0; width: 101%">
+  <h2 align="center" class="auto-style1"><b>"Time is what we want the most, but time is what we use the worst." </b></h2>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p class="auto-style6">I am someone who always wish for more time. Are you like me?</p>
+<p class="auto-style6">Let me give some examples, me whining for more time for exams, me whining for more time to sleep, me whining for more time to play. I could go on and on, but I don’t think that would be interesting.</p>
+<img alt="" class="auto-style4" height="162" src="img1E.jpg" style="float: left" width="318">
+
+
+<p class="auto-style6">By hearing the word time, the famous proverb “Time and tide wait for none” comes to one’s mind. Most of us have heard    this proverb and know the meaning as well, but for those who do not know the meaning, it is quite straightforward. It is exactly what the words convey unlike many other proverbs like “The pillow is the best advisor” and “There’s no cow on the ice”. What it means is that just like the way we cannot stop tides from flowing continuously in the sea, the same way we cannot stop time.</p>
+
+
+
+<p class="auto-style6">We must move with the time just like the hands in a clock. We should not waste this treasured time in doing absolutely nothing like me on a weekend. These opportunities do not keep coming repeatedly. So, when we see these chances, we should immediately grab them without hesitating.</p>
+
+
+<p class="auto-style6">How many of you have read or seen King Lear by Shakespeare? In the story, the King asks his daughters to declare their love for him. The eldest two daughters sugarcoated their father whereas the third sister, Cordelia, was honest. Lear was enraged by Cordelia and banned her from his kingdom. He split his wealth and land amongst his elder daughters and decided to live with them turn by turn. But his daughters turned back on their words and ousted their father from their kingdom. This was when time played an important role and made Lear realize his mistake and regret banning Cordelia.</p>
+
+
+<p class="auto-style6">I would like to share a personal experience of mine. A couple of years ago, it was exam time and one of the exams was Science. There were three study holidays. I had finished almost nothing. I told myself, “It’s fine, I have a lot of time. I’ll start after 15 minutes”. Yup, you guessed it. Slowly but surely these minutes turned into hours which turned into 2 days. In those two days, I was only able to complete 3 out of the 7 chapters I had. The next day, I woke up and freaked out. I was able to complete the chapters, but I had no time to revise any of the chapters. We should not be wasting our precious time when we could rather be using it.</p>
+
+<p class="auto-style6">Once, I looked up on google on how to solve a math problem and after 2 hours, I was watching a video on how to feed a giraffe. And… I didn’t find the solution too. I think a TED Talk by Tim Urban pretty much sums it up with humor. He talked about procrastination and how he had faces it too. I highly recommend that you watch it if you have similar choices as me.</p>
+
+
+<p class="auto-style6">Now that we are on the topic of procrastination, let me explain you what it is. It is “the avoidance of doing a task that needs to be accomplished by a certain deadline. It could be further stated as a habitual or intentional delay of starting or finishing a task despite knowing it could have negative consequences.” Basically, it’s delaying or postponing something. Suppose I have a project with a deadline of 3 months, my plan would be something to divide it equally as in 33% in the first month, another 33% in the second and finally 33% to finish it. But we know, things never go according to plans. A more accurate representation of how it goes is 1% in the first and second month and 99% in the last month.</p>
+
+
+<p class="auto-style6">The main point of our lives is to live. We should relish every single moment of it. Time that is once gone is gone. We shouldn’t be regretting our mistakes, but we should rather learn from them. Don’t count every hour of the day, make every hour of the day count.</p>
+
+
+
+ <img alt="" class="auto-style5" height="216" src="img20.jpg" style="float: left" width="274" /><p class="auto-style6">Time is immortal and nothing is ever greater than it. Iron ends up with rust on its surface no matter how much ever we prevent it. The power of time has been represented in quite a lot of poems and stories. You can take the poem Ozymandias as an example. In this poem, the poet meets a traveler who says he found a broken statue in the middle of a barren desert. On the pedestal of the statue, he saw the words “My name is Ozymandias, king of kings. Look upon my works, ye mighty and despair”. It is ironic that the King is very arrogant of the things that he has done, but in the end, time breaks everything after all. This poem can represent many things, but one of the most important learning is that nothing, not even the most supreme rulers can beat time.</p>
+
+
+<p class="auto-style6">In conclusion, there is a time and place for everything according to an old proverb. So, when opportunity knocks at your door don’t turn around. Grab the offer with both hands. The moment you act will be the right time. You never know when the time runs out or the tide turns unfavorable. Time is like sand fast pouring out of your hands and in the end, you find there’s nothing remaining in it.</p>
+ </div>
+  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+</body>
+
+</html>
